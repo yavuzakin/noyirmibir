@@ -67,7 +67,7 @@ const sliderItems = [
   },
 ];
 
-export const Features = () => {
+const Features = () => {
   return (
     <section className={styles["features"]}>
       <h1 className={styles["features__header"]}>Featured Products</h1>
@@ -78,7 +78,7 @@ export const Features = () => {
         gap={20}
         displayAtOnce={3}
         slideAtOnce={1}
-        autoPlay={false}
+        autoPlay={true}
         autoPlayDurationInSeconds={3}
       />
     </section>

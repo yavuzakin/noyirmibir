@@ -1,12 +1,11 @@
-import { SliderItem } from "./sliderItem/SliderItem";
+import { useEffect, useState } from "react";
+import Dots from "./dots/Dots";
+import SliderItem, { SliderItemType } from "./sliderItem/SliderItem";
 
 import styles from "./Slider.module.scss";
-import { useEffect, useState } from "react";
-import { Dot } from "./dot/Dot";
-import { Dots } from "./dots/Dots";
 
 interface Props {
-  sliderItems: SliderItem[];
+  sliderItems: SliderItemType[];
   leftController: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   rightController: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   gap: number;
@@ -16,7 +15,7 @@ interface Props {
   autoPlayDurationInSeconds: number;
 }
 
-export const Slider = (props: Props) => {
+const Slider = (props: Props) => {
   const [remainingTimeInMs, setRemainingTimeInMs] = useState(
     props.autoPlayDurationInSeconds * 1000
   );

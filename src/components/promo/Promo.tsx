@@ -1,6 +1,6 @@
 import styles from "./Promo.module.scss";
 
-export const Promo = () => {
+const Promo = () => {
   return (
     <div className={styles["promo"]}>
       <div className={styles["promo__top"]}>

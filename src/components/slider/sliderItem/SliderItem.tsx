@@ -1,6 +1,6 @@
 import styles from "./SliderItem.module.scss";
 
-export interface SliderItem {
+export interface SliderItemType {
   id: string;
   header: string;
   description: string;
@@ -11,10 +11,10 @@ export interface SliderItem {
 }
 
 interface Props {
-  sliderItem: SliderItem;
+  sliderItem: SliderItemType;
 }
 
-export const SliderItem = (props: Props) => {
+const SliderItem = (props: Props) => {
   return (
     <div
       className={styles["slider-item"]}
@@ -37,3 +37,5 @@ export const SliderItem = (props: Props) => {
     </div>
   );
 };
+
+export default SliderItem;

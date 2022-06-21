@@ -5,7 +5,7 @@ interface Props {
   btnText: string;
 }
 
-export const Hero = (props: Props) => {
+const Hero = (props: Props) => {
   return (
     <section className={styles["hero"]}>
       <div className={styles["hero__box"]}>

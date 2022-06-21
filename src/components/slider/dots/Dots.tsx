@@ -1,4 +1,4 @@
-import { Dot } from "../dot/Dot";
+import Dot from "../dot/Dot";
 import styles from "./Dots.module.scss";
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
   onClick: (index: number) => void;
 }
 
-export const Dots = (props: Props) => {
+const Dots = (props: Props) => {
   return (
     <div className={styles["dots"]}>
       {props.dots.map((id, i) => (
@@ -21,3 +21,5 @@ export const Dots = (props: Props) => {
     </div>
   );
 };
+
+export default Dots;

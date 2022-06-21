@@ -20,4 +20,9 @@
       margin-right: auto;
     }
   }
+
+  &__link {
+    text-decoration: none;
+    color: $dark;
+  }
 }

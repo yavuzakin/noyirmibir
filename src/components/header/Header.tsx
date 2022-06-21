@@ -1,29 +1,41 @@
+import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/svg/logo.svg";
 
 import styles from "./Header.module.scss";
 
-export const Header = () => {
-  const pages = [
-    "SHOW ALL TYRES",
-    "FIND A DEALER",
-    "GUIDES & VIDEOS",
-    "GO WITH",
-    "SERVICE & HELP",
-  ];
+const pages = [
+  "SHOW ALL TYRES",
+  "FIND A DEALER",
+  "GUIDES & VIDEOS",
+  "GO WITH",
+  "SERVICE & HELP",
+];
+
+const Header = () => {
+  const convertPageNameToSlug = (pageName: string) => {
+    return pageName.toLowerCase().replaceAll(" ", "-").replaceAll("&", "and");
+  };
 
   return (
-    <div className={styles["navbar"]}>
+    <nav className={styles["navbar"]}>
       <ul className={styles["navbar__list"]}>
         <li className={styles["navbar__item"]}>
-          <Logo />
+          <Link to="/" className={styles["navbar__link"]}>
+            <Logo />
+          </Link>
         </li>
         {pages.map((page, i) => (
           <li key={i} className={styles["navbar__item"]}>
-            {page}
+            <Link
+              to={convertPageNameToSlug(page)}
+              className={styles["navbar__link"]}
+            >
+              {page}
+            </Link>
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 };
 
