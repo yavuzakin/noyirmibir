@@ -78,7 +78,7 @@ export const Features = () => {
         gap={20}
         displayAtOnce={3}
         slideAtOnce={1}
-        autoPlay={true}
+        autoPlay={false}
         autoPlayDurationInSeconds={3}
       />
     </section>

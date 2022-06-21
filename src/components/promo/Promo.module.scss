@@ -1,0 +1,27 @@
+@import "../../assets/styles/variables.scss";
+
+.promo {
+  background-color: $asphalt;
+  padding: 4rem 6rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  &__header {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    width: 68rem;
+  }
+
+  &__btn {
+    color: $red;
+    padding: 1.6rem 7.2rem;
+    font-weight: 700;
+    font-family: "Sora", sans-serif;
+  }
+}
