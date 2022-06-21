@@ -1,0 +1,60 @@
+@import "../../../assets/styles/variables.scss";
+
+.slider-item {
+  border: 1px solid $light;
+  border-bottom: 4px solid $red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  // width: 38.5rem;
+  // height: 23.5rem;
+
+  &__header {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.72rem;
+    align-self: flex-start;
+    margin-left: 2rem;
+    margin-top: 1.6rem;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0 2rem;
+    line-height: 2.24rem;
+    text-align: left;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  &__btn {
+    padding: 1.6rem 4.675rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.51rem;
+
+    &:first-child {
+      background-color: $red-light;
+      color: $red;
+    }
+
+    &:last-child {
+      background-color: $red;
+      color: white;
+    }
+  }
+}

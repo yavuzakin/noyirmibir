@@ -12,6 +12,8 @@ const sliderItems = [
       "City life is changing. So are the habits of urban citizens. 4X4 cars that were previously used only on challenging lands are now preferred for urban use.",
     firstBtnText: "LEARN MORE",
     lastBtnText: "FIND A DEALER",
+    width: 385,
+    height: 235,
   },
   {
     id: "s2",
@@ -20,6 +22,8 @@ const sliderItems = [
       "Driveways is a ‘’Comfort tyre’’ developed for a considerably wide vehicle pool ranging from middle class sedans to upper class comfort automobiles.",
     firstBtnText: "LEARN MORE",
     lastBtnText: "FIND A DEALER",
+    width: 385,
+    height: 235,
   },
   {
     id: "s3",
@@ -28,6 +32,8 @@ const sliderItems = [
       "City life is changing. So are the habits of urban citizens. 4X4 cars that were previously used only on challenging lands are now preferred for urban use.",
     firstBtnText: "LEARN MORE",
     lastBtnText: "FIND A DEALER",
+    width: 385,
+    height: 235,
   },
   {
     id: "s4",
@@ -36,6 +42,8 @@ const sliderItems = [
       "City life is changing. So are the habits of urban citizens. 4X4 cars that were previously used only on challenging lands are now preferred for urban use.",
     firstBtnText: "LEARN MORE",
     lastBtnText: "FIND A DEALER",
+    width: 385,
+    height: 235,
   },
   {
     id: "s5",
@@ -44,6 +52,8 @@ const sliderItems = [
       "Driveways is a ‘’Comfort tyre’’ developed for a considerably wide vehicle pool ranging from middle class sedans to upper class comfort automobiles.",
     firstBtnText: "LEARN MORE",
     lastBtnText: "FIND A DEALER",
+    width: 385,
+    height: 235,
   },
   {
     id: "s6",
@@ -52,6 +62,8 @@ const sliderItems = [
       "City life is changing. So are the habits of urban citizens. 4X4 cars that were previously used only on challenging lands are now preferred for urban use.",
     firstBtnText: "LEARN MORE",
     lastBtnText: "FIND A DEALER",
+    width: 385,
+    height: 235,
   },
 ];
 
@@ -63,6 +75,11 @@ export const Features = () => {
         sliderItems={sliderItems}
         leftController={LeftController}
         rightController={RightController}
+        gap={20}
+        displayAtOnce={3}
+        slideAtOnce={1}
+        autoPlay={true}
+        autoPlayDurationInSeconds={3}
       />
     </section>
   );

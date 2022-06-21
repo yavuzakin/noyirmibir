@@ -1,0 +1,13 @@
+@import "../../../assets/styles/variables.scss";
+
+.dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: $red;
+
+  &--active {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}

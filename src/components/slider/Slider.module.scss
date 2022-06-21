@@ -1,0 +1,32 @@
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__display-area {
+    overflow: hidden;
+  }
+
+  &__items {
+    display: inline-flex;
+    justify-content: flex-start;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__controller {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+}
