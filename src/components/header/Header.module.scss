@@ -1,0 +1,23 @@
+@import "../../assets/styles/variables.scss";
+
+.navbar {
+  padding: 1rem 6rem;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $dark;
+  }
+
+  &__item {
+    cursor: pointer;
+
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+}
