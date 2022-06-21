@@ -122,7 +122,7 @@ export const Slider = (props: Props) => {
         className={styles["slider__display-area"]}
         onMouseEnter={handleToggleCount}
         onMouseLeave={handleToggleCount}
-        style={{ width: displayAreaWidth }}
+        style={{ maxWidth: displayAreaWidth }}
       >
         <div
           className={styles["slider__items"]}
