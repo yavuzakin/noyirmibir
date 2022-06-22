@@ -13,7 +13,7 @@ const Hero = (props: Props) => {
       <picture>
         <source srcSet={heroMobile} media="(max-width: 46.875em)" />
         <source srcSet={hero} media="(min-width: 46.875em)" />
-        <img src={hero} className={styles["hero__image"]} />
+        <img src={hero} className={styles["hero__image"]} alt="hero" />
       </picture>
       <div className={styles["hero__box"]}>
         <h1 className={styles["hero__header"]}>{props.headerText}</h1>
