@@ -1,13 +1,14 @@
 @import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
 
 .hero {
   position: relative;
   max-width: 100%;
-  height: 46.4rem;
-  background-image: url("../../assets/images/hero.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+
+  &__image {
+    max-width: 100%;
+    object-fit: contain;
+  }
 
   &__box {
     position: absolute;
@@ -20,6 +21,15 @@
     justify-content: center;
     gap: 3.2rem;
     max-width: 51.4rem;
+    min-width: 34.3rem;
+
+    @include respond(tab-land) {
+      gap: 2.8rem;
+    }
+
+    @include respond(tab-port) {
+      gap: 2.4rem;
+    }
   }
 
   &__header {
@@ -28,6 +38,14 @@
     font-weight: 700;
     line-height: 7.1rem;
     text-align: center;
+
+    @include respond(tab-land) {
+      font-size: 4.7rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3.8rem;
+    }
   }
 
   &__btn {
@@ -38,5 +56,13 @@
     line-height: 2rem;
     border: none;
     cursor: pointer;
+
+    @include respond(tab-land) {
+      font-size: 1.4rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.2rem;
+    }
   }
 }
