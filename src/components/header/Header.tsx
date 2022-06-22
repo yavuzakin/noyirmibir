@@ -55,10 +55,10 @@ const Header = () => {
               className={styles["navbar__link"]}
             >
               {page}
+              <div className={styles["navbar__right-arrow"]}>
+                <RightArrow />
+              </div>
             </Link>
-            <div className={styles["navbar__right-arrow"]}>
-              <RightArrow />
-            </div>
           </li>
         ))}
       </ul>
