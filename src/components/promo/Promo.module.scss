@@ -1,27 +1,61 @@
 @import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
 
 .promo {
   background-color: $asphalt;
-  padding: 4rem 6rem;
+  padding: 4rem 6.4rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 4rem;
 
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4rem;
+  @include respond(tab-port) {
+    padding: 1.6rem;
+    grid-template-columns: auto;
+    row-gap: 1.6rem;
   }
 
   &__header {
     color: white;
     font-size: 4rem;
     font-weight: 700;
+    line-height: 5.04rem;
     max-width: 68rem;
+
+    @include respond(tab-land) {
+      font-size: 3.2rem;
+      line-height: 4.1rem;
+      max-width: 48rem;
+    }
+
+    @include respond(tab-port) {
+      max-width: 100%;
+      font-size: 2.4rem;
+      line-height: 3.024rem;
+    }
   }
 
   &__btn {
     color: $red;
-    padding: 1.6rem 7.2rem;
+    padding: 1.6rem 6.2rem;
+    max-width: 30rem;
+    font-size: 1.6rem;
     font-weight: 700;
+    grid-row: 1;
+    grid-column: 2;
+    align-self: center;
+    justify-self: end;
+
+    @include respond(tab-land) {
+      font-size: 1.4rem;
+    }
+
+    @include respond(tab-port) {
+      grid-row: initial;
+      grid-column: initial;
+      justify-self: initial;
+      max-width: 100%;
+      font-size: 1.2rem;
+    }
   }
 
   &__iframe-container {
@@ -29,6 +63,7 @@
     overflow: hidden;
     width: 100%;
     padding-top: 56.25%;
+    grid-column: 1/-1;
   }
 
   &__video {

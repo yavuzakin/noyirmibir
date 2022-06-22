@@ -3,12 +3,9 @@ import styles from "./Promo.module.scss";
 const Promo = () => {
   return (
     <div className={styles["promo"]}>
-      <div className={styles["promo__top"]}>
-        <h2 className={styles["promo__header"]}>
-          Feel the excellent wet braking with Driveways!
-        </h2>
-        <button className={styles["promo__btn"]}>WATCH ALL VIDEOS</button>
-      </div>
+      <h2 className={styles["promo__header"]}>
+        Feel the excellent wet braking with Driveways!
+      </h2>
       <div className={styles["promo__iframe-container"]}>
         <iframe
           className={styles["promo__video"]}
@@ -19,6 +16,7 @@ const Promo = () => {
           title="video"
         />
       </div>
+      <button className={styles["promo__btn"]}>WATCH ALL VIDEOS</button>
     </div>
   );
 };
