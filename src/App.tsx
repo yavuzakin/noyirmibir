@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import ServiceAndHelp from "./pages/ServiceAndHelp";
 import ShowAllTyres from "./pages/ShowAllTyres";
 
+import "./assets/styles/app.scss";
+
 function App() {
   return (
     <div className="App" style={{ maxWidth: "144rem", margin: "0 auto" }}>
