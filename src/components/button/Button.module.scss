@@ -1,0 +1,45 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+
+  &--primary {
+    color: white;
+    background-color: $red;
+    border-radius: 2px;
+  }
+
+  &--secondary {
+    color: $red;
+    background-color: $red-light;
+    border-radius: 2px;
+  }
+
+  &--tertiary {
+    color: $red;
+    background-color: white;
+  }
+
+  &--small {
+    font-size: 1.2rem;
+    line-height: 1.512rem;
+    padding: 1.6rem 2rem;
+  }
+
+  &--medium {
+    font-size: 1.6rem;
+    padding: 1.6rem 2.4rem;
+
+    @include respond(tab-land) {
+      font-size: 1.4rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.2rem;
+    }
+  }
+}

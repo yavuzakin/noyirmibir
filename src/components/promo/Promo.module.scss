@@ -35,26 +35,18 @@
   }
 
   &__btn {
-    color: $red;
-    padding: 1.6rem 6.2rem;
-    max-width: 30rem;
-    font-size: 1.6rem;
-    font-weight: 700;
+    max-width: 100%;
+    min-width: 30rem;
     grid-row: 1;
     grid-column: 2;
     align-self: center;
     justify-self: end;
-
-    @include respond(tab-land) {
-      font-size: 1.4rem;
-    }
 
     @include respond(tab-port) {
       grid-row: initial;
       grid-column: initial;
       justify-self: initial;
       max-width: 100%;
-      font-size: 1.2rem;
     }
   }
 

@@ -1,3 +1,5 @@
+import Button from "../../button/Button";
+
 import styles from "./SliderItem.module.scss";
 
 export interface SliderItemType {
@@ -27,12 +29,12 @@ const SliderItem = (props: Props) => {
         {props.sliderItem.description}
       </p>
       <div className={styles["slider-item__actions"]}>
-        <button className={styles["slider-item__btn"]}>
-          {props.sliderItem.firstBtnText}
-        </button>
-        <button className={styles["slider-item__btn"]}>
-          {props.sliderItem.lastBtnText}
-        </button>
+        <div className={styles["slider-item__btn"]}>
+          <Button type="secondary">{props.sliderItem.firstBtnText}</Button>
+        </div>
+        <div className={styles["slider-item__btn"]}>
+          <Button>{props.sliderItem.lastBtnText}</Button>
+        </div>
       </div>
     </div>
   );

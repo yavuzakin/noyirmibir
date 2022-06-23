@@ -1,3 +1,5 @@
+import Button from "../button/Button";
+
 import styles from "./Promo.module.scss";
 
 const Promo = () => {
@@ -16,7 +18,11 @@ const Promo = () => {
           title="video"
         />
       </div>
-      <button className={styles["promo__btn"]}>WATCH ALL VIDEOS</button>
+      <div className={styles["promo__btn"]}>
+        <Button type="tertiary" size="medium">
+          WATCH ALL VIDEOS
+        </Button>
+      </div>
     </div>
   );
 };

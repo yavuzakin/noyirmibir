@@ -1,6 +1,8 @@
-import styles from "./Hero.module.scss";
+import Button from "../button/Button";
 import hero from "../../assets/images/hero.png";
 import heroMobile from "../../assets/images/hero-mobile.png";
+
+import styles from "./Hero.module.scss";
 
 interface Props {
   headerText: string;
@@ -17,7 +19,11 @@ const Hero = (props: Props) => {
       </picture>
       <div className={styles["hero__box"]}>
         <h1 className={styles["hero__header"]}>{props.headerText}</h1>
-        <button className={styles["hero__btn"]}>{props.btnText}</button>
+        <div>
+          <Button type="tertiary" size="medium">
+            {props.btnText}
+          </Button>
+        </div>
       </div>
     </section>
   );
